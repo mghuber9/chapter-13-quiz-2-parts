@@ -18,339 +18,308 @@
   <button id="submitBtn">Submit</button>
 
   <script>
-   const quizData = [
+  const quizData = [
   {
-    "question": "Which of the following best relates to the topic of 'Role of County Governments'?",
-    "correct": "They do not have home rule; their powers are defined by the state.",
+    "question": "When does Texas pass its state budget?",
+    "correct": "Every two years during odd-year legislative sessions",
     "answers": [
-      "Public safety and criminal justice receive significant funding, especially prisons.",
-      "They do not have home rule; their powers are defined by the state.",
-      "Revenue bonds are repaid from specific income sources, like toll roads.",
-      "Texas fiscal policy emphasizes low taxes and limited government.",
+      "Annually during even-year sessions",
+      "Every two years during odd-year legislative sessions",
+      "Every four years during special sessions",
+      "Monthly during regular sessions"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of County Governments'?",
-    "correct": "The commissioners court governs each county and passes local policies.",
+    "question": "How far in advance must Texas forecast revenue for its biennial budget?",
+    "correct": "30 months",
     "answers": [
-      "They are assessed based on the market value of property each year.",
-      "The commissioners court governs each county and passes local policies.",
-      "Each commissioner represents a precinct within the county.",
-      "Texas passes a budget every two years during odd-year legislative sessions.",
+      "12 months",
+      "30 months",
+      "6 months",
+      "48 months"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of County Governments'?",
-    "correct": "Counties are the administrative arm of state government at the local level.",
+    "question": "What limits the Texas legislature's spending in the budget process?",
+    "correct": "The comptroller's revenue estimate",
     "answers": [
-      "Counties are the administrative arm of state government at the local level.",
-      "Environmental and natural resources programs make up a smaller share.",
-      "Each commissioner represents a precinct within the county.",
-      "Tax increases are politically unpopular, shaping budget decisions.",
+      "Federal funding allocations",
+      "The comptroller's revenue estimate",
+      "Voter approval for expenditures",
+      "County government mandates"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Ad Valorem Taxes'?",
-    "correct": "Ad valorem means 'according to value'-typically property taxes.",
+    "question": "Why is responding to mid-cycle crises difficult in Texas's budget system?",
+    "correct": "Because of infrequent sessions in the biennial cycle",
     "answers": [
-      "Counties operate jails and provide indigent healthcare.",
-      "Ad valorem means 'according to value'-typically property taxes.",
-      "They are repaid over time, typically through taxes or user fees.",
-      "Texas has 24 regional COGs covering all counties.",
+      "Due to annual legislative sessions",
+      "Because of infrequent sessions in the biennial cycle",
+      "Due to excessive federal funding",
+      "Because of voter veto power"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Ad Valorem Taxes'?",
-    "correct": "They are assessed based on the market value of property each year.",
+    "question": "What does Texas's biennial budgeting system promote?",
+    "correct": "Conservative fiscal practices",
     "answers": [
-      "Home rule allows more autonomy in local policy, taxation, and government structure.",
-      "They are assessed based on the market value of property each year.",
-      "The commissioners court governs each county and passes local policies.",
-      "Biennial budgeting contributes to conservative fiscal practices.",
+      "Deficit spending",
+      "Conservative fiscal practices",
+      "Increased tax rates",
+      "Federal oversight"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Ad Valorem Taxes'?",
-    "correct": "Used primarily to fund local services like schools and fire departments.",
+    "question": "When are supplemental budgets passed in Texas?",
+    "correct": "If revenue exceeds projections",
     "answers": [
-      "Balanced budget requirements limit deficit spending.",
-      "Used primarily to fund local services like schools and fire departments.",
-      "These cities are limited in power to what state law expressly allows.",
-      "General government includes the operation of state agencies and executive offices.",
+      "When federal funding decreases",
+      "If revenue exceeds projections",
+      "During even-year sessions",
+      "To fund county governments"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Ad Valorem Taxes'?",
-    "correct": "Tax rates are set by local taxing authorities like school boards or city councils.",
+    "question": "What do municipal bonds primarily fund in Texas?",
+    "correct": "Public projects like schools, roads, and utilities",
     "answers": [
-      "Tax rates are set by local taxing authorities like school boards or city councils.",
-      "Transportation spending includes highways, TxDOT, and public infrastructure.",
-      "Home rule allows more autonomy in local policy, taxation, and government structure.",
-      "The commissioners court governs each county and passes local policies.",
+      "Private business expansions",
+      "Public projects like schools, roads, and utilities",
+      "State agency operations",
+      "Federal grant programs"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Ad Valorem Taxes'?",
-    "correct": "The appraisal district determines property values for tax purposes.",
+    "question": "How are municipal bonds in Texas typically repaid?",
+    "correct": "Over time, typically through taxes or user fees",
     "answers": [
-      "They adopt the county budget, set tax rates, and oversee county programs.",
-      "The office plays a crucial gatekeeping role in Texas finance.",
-      "The appraisal district determines property values for tax purposes.",
-      "Boards are composed of elected members serving staggered terms.",
+      "Through immediate tax hikes",
+      "Over time, typically through taxes or user fees",
+      "With federal grants",
+      "By state appropriations"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Ad Valorem Taxes'?",
-    "correct": "Texas relies heavily on ad valorem taxes due to no state income tax.",
+    "question": "What is a characteristic of general obligation bonds in Texas?",
+    "correct": "They require voter approval and are backed by taxes",
     "answers": [
-      "Texas relies heavily on ad valorem taxes due to no state income tax.",
-      "They adopt the county budget, set tax rates, and oversee county programs.",
-      "General law cities operate under laws provided by the Texas Legislature.",
-      "Their estimate limits how much the legislature can spend.",
+      "They are repaid from toll road revenue",
+      "They require voter approval and are backed by taxes",
+      "They do not require voter approval",
+      "They fund private businesses"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Councils of Government (COGs)'?",
-    "correct": "COGs are voluntary associations of local governments for regional cooperation.",
+    "question": "How are revenue bonds in Texas repaid?",
+    "correct": "From specific income sources, like toll roads",
     "answers": [
-      "Examples of progressive taxes include federal income taxes and some redistributive policies.",
-      "Counties manage local roads, public safety, and elections.",
-      "COGs are voluntary associations of local governments for regional cooperation.",
-      "Transportation spending includes highways, TxDOT, and public infrastructure.",
+      "From general state taxes",
+      "From specific income sources, like toll roads",
+      "Through voter-approved property taxes",
+      "With federal subsidies"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Councils of Government (COGs)'?",
-    "correct": "They help coordinate transportation, emergency planning, and economic development.",
+    "question": "What do municipal bonds allow Texas cities to do?",
+    "correct": "Make long-term investments without immediate tax hikes",
     "answers": [
-      "Tax rates are set by local taxing authorities like school boards or city councils.",
-      "Sales taxes are typically regressive because everyone pays the same rate regardless of income.",
-      "The comptroller also audits expenditures and provides economic forecasts.",
-      "They help coordinate transportation, emergency planning, and economic development.",
+      "Increase immediate tax rates",
+      "Make long-term investments without immediate tax hikes",
+      "Fund state agencies",
+      "Reduce federal grants"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Councils of Government (COGs)'?",
-    "correct": "COGs do not have taxing authority or binding legislative powers.",
+    "question": "What benefit do municipal bonds offer to investors in Texas?",
+    "correct": "Favorable tax treatment",
     "answers": [
-      "Progressive taxes increase in rate as income increases, placing a larger burden on the wealthy.",
-      "COGs do not have taxing authority or binding legislative powers.",
-      "Tax increases are politically unpopular, shaping budget decisions.",
-      "Texas has 24 regional COGs covering all counties.",
+      "Guaranteed high returns",
+      "Favorable tax treatment",
+      "Exemption from state oversight",
+      "Direct funding from federal grants"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Councils of Government (COGs)'?",
-    "correct": "COGs receive funding from local, state, and federal sources.",
+    "question": "What do Texas counties primarily manage?",
+    "correct": "Local roads, public safety, and elections",
     "answers": [
-      "COGs receive funding from local, state, and federal sources.",
-      "Municipal bonds often receive favorable tax treatment for investors.",
-      "The office plays a crucial gatekeeping role in Texas finance.",
-      "Transportation spending includes highways, TxDOT, and public infrastructure.",
+      "State-wide education policies",
+      "Local roads, public safety, and elections",
+      "Federal grant programs",
+      "Municipal bond issuance"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Councils of Government (COGs)'?",
-    "correct": "They provide training, research, and grant administration services.",
+    "question": "What administrative functions do Texas counties perform?",
+    "correct": "Maintain property records and conduct criminal and civil courts",
     "answers": [
-      "Business and economic development, including workforce training, also receive funding.",
-      "They provide training, research, and grant administration services.",
-      "They are assessed based on the market value of property each year.",
-      "Home rule cities (population > 5,000) can adopt charters to govern themselves.",
+      "Set state tax rates",
+      "Maintain property records and conduct criminal and civil courts",
+      "Oversee public school curricula",
+      "Issue state bonds"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Councils of Government (COGs)'?",
-    "correct": "COGs do not have taxing authority or binding legislative powers.",
+    "question": "What services do Texas counties provide?",
+    "correct": "Operation of jails and indigent healthcare",
     "answers": [
-      "School boards can call for bond elections to fund new schools or improvements.",
-      "Texas fiscal policy emphasizes low taxes and limited government.",
-      "Education is the largest area, with spending on public schools and higher education.",
-      "COGs do not have taxing authority or binding legislative powers.",
+      "State-wide transportation planning",
+      "Operation of jails and indigent healthcare",
+      "Higher education funding",
+      "Federal tax collection"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of Local School Boards'?",
-    "correct": "School boards set policy and direction for independent school districts (ISDs).",
+    "question": "What limits the governance of Texas counties?",
+    "correct": "Powers defined by the state, without home rule",
     "answers": [
-      "The county judge may also handle emergency management and rural judicial duties.",
-      "Biennial budgeting contributes to conservative fiscal practices.",
-      "Counties manage local roads, public safety, and elections.",
-      "School boards set policy and direction for independent school districts (ISDs).",
+      "Home rule authority",
+      "Powers defined by the state, without home rule",
+      "Federal mandates",
+      "Voter-approved charters"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of Local School Boards'?",
-    "correct": "They adopt budgets, hire superintendents, and oversee curriculum standards.",
+    "question": "What body governs Texas counties and passes local policies?",
+    "correct": "The commissioners court",
     "answers": [
-      "They adopt budgets, hire superintendents, and oversee curriculum standards.",
-      "They are repaid over time, typically through taxes or user fees.",
-      "Council-manager cities hire a professional manager to execute policies set by the elected council.",
-      "This system requires forecasting revenue 30 months in advance.",
+      "The Texas Legislature",
+      "The commissioners court",
+      "The Legislative Budget Board",
+      "The county school board"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of Local School Boards'?",
-    "correct": "Boards are composed of elected members serving staggered terms.",
+    "question": "What role do Texas counties play in relation to state government?",
+    "correct": "They are the administrative arm at the local level",
     "answers": [
-      "General law cities operate under laws provided by the Texas Legislature.",
-      "Boards are composed of elected members serving staggered terms.",
-      "They maintain property records and conduct criminal and civil courts.",
-      "General law cities often have a standard mayor-council government.",
+      "They set state tax policies",
+      "They are the administrative arm at the local level",
+      "They oversee federal programs",
+      "They adopt home rule charters"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of Local School Boards'?",
-    "correct": "They establish local policies within the framework of state and federal law.",
+    "question": "What does the term 'ad valorem' refer to in Texas taxation?",
+    "correct": "Property taxes based on value",
     "answers": [
-      "They establish local policies within the framework of state and federal law.",
-      "Each commissioner represents a precinct within the county.",
-      "Environmental and natural resources programs make up a smaller share.",
-      "Education is the largest area, with spending on public schools and higher education.",
+      "Sales taxes on goods",
+      "Property taxes based on value",
+      "Income taxes",
+      "Fuel taxes"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of Local School Boards'?",
-    "correct": "School boards can call for bond elections to fund new schools or improvements.",
+    "question": "How are ad valorem taxes in Texas assessed?",
+    "correct": "Based on the market value of property each year",
     "answers": [
-      "School boards can call for bond elections to fund new schools or improvements.",
-      "Balanced budget requirements limit deficit spending.",
-      "They do not have home rule; their powers are defined by the state.",
-      "Texas fiscal policy emphasizes low taxes and limited government.",
+      "Based on income levels",
+      "Based on the market value of property each year",
+      "Based on federal guidelines",
+      "Based on fixed rates"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of Local School Boards'?",
-    "correct": "They represent community interests in the education system.",
+    "question": "What are ad valorem taxes in Texas primarily used to fund?",
+    "correct": "Local services like schools and fire departments",
     "answers": [
-      "COGs do not have taxing authority or binding legislative powers.",
-      "In council-manager systems, the mayor is often a ceremonial role or part of the council.",
-      "They represent community interests in the education system.",
-      "Progressive tax structures aim to reduce income inequality.",
+      "State transportation projects",
+      "Local services like schools and fire departments",
+      "Federal mandates",
+      "Higher education"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'State Fiscal Policy'?",
-    "correct": "Texas fiscal policy emphasizes low taxes and limited government.",
+    "question": "Who sets the tax rates for ad valorem taxes in Texas?",
+    "correct": "Local taxing authorities like school boards or city councils",
     "answers": [
-      "Texas fiscal policy emphasizes low taxes and limited government.",
-      "Their estimate limits how much the legislature can spend.",
-      "The strong mayor oversees departments, prepares the budget, and can veto council actions.",
-      "COGs receive funding from local, state, and federal sources.",
+      "The Texas Legislature",
+      "Local taxing authorities like school boards or city councils",
+      "The comptroller",
+      "The federal government"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'State Fiscal Policy'?",
-    "correct": "The state has no personal income tax, relying on sales and property taxes.",
+    "question": "Who determines property values for ad valorem taxes in Texas?",
+    "correct": "The appraisal district",
     "answers": [
-      "The county judge presides over the commissioners court and represents the county.",
-      "The state has no personal income tax, relying on sales and property taxes.",
-      "COGs are voluntary associations of local governments for regional cooperation.",
-      "Education is the largest area, with spending on public schools and higher education.",
+      "The Texas Legislature",
+      "The appraisal district",
+      "The comptroller",
+      "The federal government"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'State Fiscal Policy'?",
-    "correct": "Balanced budget requirements limit deficit spending.",
+    "question": "Why does Texas rely heavily on ad valorem taxes?",
+    "correct": "Because it has no state income tax",
     "answers": [
-      "Balanced budget requirements limit deficit spending.",
-      "Used primarily to fund local services like schools and fire departments.",
-      "Municipal bonds often receive favorable tax treatment for investors.",
-      "Regressive taxes place a higher burden on lower-income individuals as a percentage of income.",
+      "Due to its state income tax",
+      "Because it has no state income tax",
+      "To fund federal programs",
+      "To reduce sales taxes"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'State Fiscal Policy'?",
-    "correct": "Fiscal conservatism is a core political value in Texas.",
+    "question": "What are Councils of Government (COGs) in Texas?",
+    "correct": "Voluntary associations of local governments for regional cooperation",
     "answers": [
-      "Fiscal conservatism is a core political value in Texas.",
-      "They establish local policies within the framework of state and federal law.",
-      "Municipal bonds often receive favorable tax treatment for investors.",
-      "Education is the largest area, with spending on public schools and higher education.",
+      "State agencies with taxing authority",
+      "Voluntary associations of local governments for regional cooperation",
+      "Federal oversight bodies",
+      "Mandatory county organizations"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'State Fiscal Policy'?",
-    "correct": "Tax increases are politically unpopular, shaping budget decisions.",
+    "question": "What do Texas COGs coordinate?",
+    "correct": "Transportation, emergency planning, and economic development",
     "answers": [
-      "The county judge presides over the commissioners court and represents the county.",
-      "Balanced budget requirements limit deficit spending.",
-      "General obligation bonds require voter approval and are backed by taxes.",
-      "Tax increases are politically unpopular, shaping budget decisions.",
+      "State tax collection",
+      "Transportation, emergency planning, and economic development",
+      "Public school curricula",
+      "Federal mandates"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'State Fiscal Policy'?",
-    "correct": "Federal mandates and dedicated funds restrict budget flexibility.",
+    "question": "How many regional COGs are there in Texas, and what do they cover?",
+    "correct": "24, covering all counties",
     "answers": [
-      "Federal mandates and dedicated funds restrict budget flexibility.",
-      "They provide training, research, and grant administration services.",
-      "Texas passes a budget every two years during odd-year legislative sessions.",
-      "School boards set policy and direction for independent school districts (ISDs).",
+      "12, covering select counties",
+      "24, covering all counties",
+      "50, covering urban areas",
+      "10, covering rural areas"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of the Comptroller'?",
-    "correct": "The comptroller estimates and certifies revenue before budgets are passed.",
+    "question": "How are Texas COGs funded?",
+    "correct": "From local, state, and federal sources",
     "answers": [
-      "General law cities often have a standard mayor-council government.",
-      "Council-manager cities hire a professional manager to execute policies set by the elected council.",
-      "The comptroller estimates and certifies revenue before budgets are passed.",
-      "Health and Human Services is second, dominated by Medicaid and CHIP.",
+      "Exclusively by federal grants",
+      "From local, state, and federal sources",
+      "By state taxes only",
+      "Through private donations"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of the Comptroller'?",
-    "correct": "Their estimate limits how much the legislature can spend.",
+    "question": "What services do Texas COGs provide?",
+    "correct": "Training, research, and grant administration",
     "answers": [
-      "Examples of progressive taxes include federal income taxes and some redistributive policies.",
-      "Business and economic development, including workforce training, also receive funding.",
-      "Their estimate limits how much the legislature can spend.",
-      "The commissioners court governs each county and passes local policies.",
+      "Tax collection and enforcement",
+      "Training, research, and grant administration",
+      "State budget oversight",
+      "Public school management"
     ]
   },
   {
-    "question": "Which of the following best relates to the topic of 'Role of the Comptroller'?",
-    "correct": "They collect state taxes and manage state accounts.",
+    "question": "What limitation do Texas COGs have?",
+    "correct": "They lack taxing authority or binding legislative powers",
     "answers": [
-      "COGs do not have taxing authority or binding legislative powers.",
-      "General law cities operate under laws provided by the Texas Legislature.",
-      "They help coordinate transportation, emergency planning, and economic development.",
-      "They collect state taxes and manage state accounts.",
+      "They have taxing authority",
+      "They lack taxing authority or binding legislative powers",
+      "They enforce state laws",
+      "They manage county budgets"
     ]
-  },
-  {
-    "question": "Which of the following best relates to the topic of 'Role of the Comptroller'?",
-    "correct": "The comptroller also audits expenditures and provides economic forecasts.",
-    "answers": [
-      "They represent community interests in the education system.",
-      "The comptroller also audits expenditures and provides economic forecasts.",
-      "It is harder to respond to mid-cycle crises due to infrequent sessions.",
-      "General government includes the operation of state agencies and executive offices.",
-    ]
-  },
-  {
-    "question": "Which of the following best relates to the topic of 'Role of the Comptroller'?",
-    "correct": "The comptroller also audits expenditures and provides economic forecasts.",
-    "answers": [
-      "The comptroller also audits expenditures and provides economic forecasts.",
-      "This system requires forecasting revenue 30 months in advance.",
-      "Home rule cities (population > 5,000) can adopt charters to govern themselves.",
-      "A conservative estimate can effectively constrain legislative ambitions.",
-    ]
-  },
-  {
-    "question": "Which of the following best relates to the topic of 'Role of the Comptroller'?",
-    "correct": "The office plays a crucial gatekeeping role in Texas finance.",
-    "answers": [
-      "Texas passes a budget every two years during odd-year legislative sessions.",
-      "Sales taxes are typically regressive because everyone pays the same rate regardless of income.",
-      "The office plays a crucial gatekeeping role in Texas finance.",
-      "They help coordinate transportation, emergency planning, and economic development.",
-    ]
-  },
+  }
 ];
-
     function shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
