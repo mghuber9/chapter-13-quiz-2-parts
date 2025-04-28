@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 13 Multiple Choice Quiz – Part 2</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+    .question { margin-bottom: 20px; }
+    .answers label { display: block; margin: 5px 0; }
+    #submitBtn { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+    .correct-answer { color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Chapter 13 Multiple Choice Quiz – Part 2</h2>
+  <div id="quizContainer"></div>
+  <button id="submitBtn">Submit</button>
+
+  <script>
+   const quizData = [
+  {
+    "question": "What is the role of the county judge in Texas?",
+    "correct": "Presides over the commissioners court and represents the county",
+    "answers": [
+      "Manages state agencies",
+      "Presides over the commissioners court and represents the county",
+      "Sets state tax rates",
+      "Oversees public schools"
+    ]
+  },
+  {
+    "question": "Who comprises the Texas commissioners court?",
+    "correct": "Four commissioners and the judge",
+    "answers": [
+      "Four commissioners and the judge",
+      "The county judge and state legislators",
+      "Six elected officials",
+      "The county judge and school board"
+    ]
+  },
+  {
+    "question": "What does the Texas commissioners court do?",
+    "correct": "Adopts the county budget, sets tax rates, and oversees county programs",
+    "answers": [
+      "Sets state education standards",
+      "Adopts the county budget, sets tax rates, and oversees county programs",
+      "Manages federal grants",
+      "Issues municipal bonds"
+    ]
+  },
+  {
+    "question": "What additional duties may the Texas county judge perform?",
+    "correct": "Emergency management and rural judicial duties",
+    "answers": [
+      "State budget oversight",
+      "Emergency management and rural judicial duties",
+      "Public school administration",
+      "Federal tax collection"
+    ]
+  },
+  {
+    "question": "What does each commissioner in a Texas county represent?",
+    "correct": "A precinct within the county",
+    "answers": [
+      "A state legislative district",
+      "A precinct within the county",
+      "A school district",
+      "A federal agency"
+    ]
+  },
+  {
+    "question": "How does the Texas commissioners court function?",
+    "correct": "As both a legislative and executive local body",
+    "answers": [
+      "As a judicial body only",
+      "As both a legislative and executive local body",
+      "As a federal oversight body",
+      "As a state agency"
+    ]
+  },
+  {
+    "question": "What do local school boards in Texas do for independent school districts?",
+    "correct": "Set policy and direction",
+    "answers": [
+      "Collect state taxes",
+      "Set policy and direction",
+      "Manage county jails",
+      "Oversee state agencies"
+    ]
+  },
+  {
+    "question": "What are key responsibilities of Texas local school boards?",
+    "correct": "Adopting budgets, hiring superintendents, and overseeing curriculum standards",
+    "answers": [
+      "Issuing municipal bonds",
+      "Adopting budgets, hiring superintendents, and overseeing curriculum standards",
+      "Setting state tax rates",
+      "Managing county elections"
+    ]
+  },
+  {
+    "question": "How are Texas local school boards structured?",
+    "correct": "Composed of elected members serving staggered terms",
+    "answers": [
+      "Appointed by the county judge",
+      "Composed of elected members serving staggered terms",
+      "Selected by the state legislature",
+      "Composed of federal officials"
+    ]
+  },
+  {
+    "question": "Within what framework do Texas school boards establish local policies?",
+    "correct": "State and federal law",
+    "answers": [
+      "Federal tax codes",
+      "State and federal law",
+      "County ordinances",
+      "Municipal charters"
+    ]
+  },
+  {
+    "question": "What can Texas school boards do to fund new schools?",
+    "correct": "Call for bond elections",
+    "answers": [
+      "Increase state sales taxes",
+      "Call for bond elections",
+      "Collect federal taxes",
+      "Issue revenue bonds"
+    ]
+  },
+  {
+    "question": "What do Texas school boards represent in the education system?",
+    "correct": "Community interests",
+    "answers": [
+      "State government priorities",
+      "Community interests",
+      "Federal mandates",
+      "County budget priorities"
+    ]
+  },
+  {
+    "question": "What does Texas fiscal policy emphasize?",
+    "correct": "Low taxes and limited government",
+    "answers": [
+      "High taxes and expanded government",
+      "Low taxes and limited government",
+      "Deficit spending",
+      "Federal oversight"
+    ]
+  },
+  {
+    "question": "What taxes does Texas rely on due to no personal income tax?",
+    "correct": "Sales and property taxes",
+    "answers": [
+      "Federal income taxes",
+      "Sales and property taxes",
+      "Corporate income taxes",
+      "Inheritance taxes"
+    ]
+  },
+  {
+    "question": "What limits deficit spending in Texas?",
+    "correct": "Balanced budget requirements",
+    "answers": [
+      "Federal grants",
+      "Balanced budget requirements",
+      "Voter referendums",
+      "County mandates"
+    ]
+  },
+  {
+    "question": "What is a core political value in Texas fiscal policy?",
+    "correct": "Fiscal conservatism",
+    "answers": [
+      "Progressive taxation",
+      "Fiscal conservatism",
+      "Deficit spending",
+      "High tax rates"
+    ]
+  },
+  {
+    "question": "How do tax increases affect Texas budget decisions?",
+    "correct": "They are politically unpopular, shaping budget decisions",
+    "answers": [
+      "They are politically unpopular, shaping budget decisions",
+      "They are frequently implemented",
+      "They are mandated by federal law",
+      "They are supported by voters"
+    ]
+  },
+  {
+    "question": "What restricts budget flexibility in Texas?",
+    "correct": "Federal mandates and dedicated funds",
+    "answers": [
+      "Voter-approved tax cuts",
+      "Federal mandates and dedicated funds",
+      "State income taxes",
+      "Annual budget cycles"
+    ]
+  },
+  {
+    "question": "What does the Texas comptroller do before budgets are passed?",
+    "correct": "Estimates and certifies revenue",
+    "answers": [
+      "Sets tax rates",
+      "Estimates and certifies revenue",
+      "Approves municipal bonds",
+      "Manages county budgets"
+    ]
+  },
+  {
+    "question": "What does the comptroller's revenue estimate determine?",
+    "correct": "How much the legislature can spend",
+    "answers": [
+      "County tax rates",
+      "How much the legislature can spend",
+      "Federal grant allocations",
+      "School board budgets"
+    ]
+  },
+  {
+    "question": "What administrative role does the Texas comptroller perform?",
+    "correct": "Collects state taxes and manages state accounts",
+    "answers": [
+      "Manages county elections",
+      "Collects state taxes and manages state accounts",
+      "Oversees school districts",
+      "Issues municipal bonds"
+    ]
+  },
+  {
+    "question": "What additional duties does the Texas comptroller have?",
+    "correct": "Audits expenditures and provides economic forecasts",
+    "answers": [
+      "Sets education standards",
+      "Audits expenditures and provides economic forecasts",
+      "Manages federal grants",
+      "Oversees county courts"
+    ]
+  },
+  {
+    "question": "How can the comptroller's estimate affect the Texas legislature?",
+    "correct": "A conservative estimate can constrain legislative ambitions",
+    "answers": [
+      "It encourages deficit spending",
+      "A conservative estimate can constrain legislative ambitions",
+      "It increases federal funding",
+      "It eliminates dedicated funds"
+    ]
+  },
+  {
+    "question": "What role does the comptroller's office play in Texas finance?",
+    "correct": "A crucial gatekeeping role",
+    "answers": [
+      "A minor advisory role",
+      "A crucial gatekeeping role",
+      "A judicial oversight role",
+      "A federal funding role"
+    ]
+  }
+];
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    function loadQuiz() {
+      const container = document.getElementById('quizContainer');
+      container.innerHTML = '';
+      shuffle(quizData);
+
+      quizData.forEach((item, index) => {
+        shuffle(item.answers);
+        const qDiv = document.createElement('div');
+        qDiv.className = 'question';
+        qDiv.innerHTML = `<p><strong>${index + 1}. ${item.question}</strong></p>`;
+
+        const answersDiv = document.createElement('div');
+        answersDiv.className = 'answers';
+
+        item.answers.forEach(answer => {
+          answersDiv.innerHTML += `
+            <label>
+              <input type="radio" name="q${index}" value="${answer}"> ${answer}
+            </label>
+          `;
+        });
+
+        qDiv.appendChild(answersDiv);
+        container.appendChild(qDiv);
+      });
+    }
+
+    document.getElementById('submitBtn').addEventListener('click', () => {
+      let score = 0;
+      let missed = [];
+
+      quizData.forEach((item, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        if (selected && selected.value === item.correct) {
+          score++;
+        } else {
+          missed.push({ question: item.question, correct: item.correct });
+        }
+      });
+
+      let name = prompt("Enter your name:");
+      let quizName = "Chapter 13 Quiz - Part 2";
+      let total = quizData.length;
+
+      fetch("https://script.google.com/macros/s/AKfycbzyNT1SVxLy3yjEa7alnNx_whHptmNGzLzPbqrxah_6xglsO1VdwpyAawgEuKzzPc_q/exec", {
+        method: "POST",
+        body: JSON.stringify({
+          name: name,
+          quiz: quizName,
+          score: score,
+          total: total
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+
+      setTimeout(() => {
+        const container = document.getElementById('quizContainer');
+        container.innerHTML = `<h2>Your Score: ${score} / ${quizData.length}</h2>`;
+
+        if (missed.length > 0) {
+          container.innerHTML += `<h3>You missed the following questions:</h3>`;
+          missed.forEach((item, i) => {
+            container.innerHTML += `
+              <div class="question">
+                <p><strong>${i + 1}. ${item.question}</strong></p>
+                <p class="correct-answer">Correct answer: ${item.correct}</p>
+              </div>
+            `;
+          });
+        } else {
+          container.innerHTML += `<p><strong>Perfect score! Great job!</strong></p>`;
+        }
+
+        document.getElementById('submitBtn').style.display = 'none';
+      }, 1000);
+    });
+
+    window.onload = loadQuiz;
+  </script>
+</body>
+</html>
